@@ -1,0 +1,22 @@
+    body{
+        margin:0px;
+        border-spacing: 0px;
+        width: 100%
+    }
+    .top{
+        background-color: steelblue;
+        color: white;
+        text-align: center;
+        height: 10%;
+        width: 100%;
+        }
+    .game{
+        width: 500px;
+        height: 500px;
+       
+        
+    }
+    .btn_game{
+        height: 120px;
+        width: 120px;
+    }

@@ -1,0 +1,96 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+   
+}
+body{
+    /**Isso remove as margens das bordas
+      *
+      */
+      border-spacing: 0px;
+      margin: 0px;
+      background: radial-gradient(ellipse at center, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
+      
+      
+}
+.btn_game{
+    background-color:white;
+    height: 150px;
+    width: 150px;
+    border: 0px;    
+    margin-top: 5px;
+    margin-left:5px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    text-align: center;
+    /*o comando abaixo arrumou o problema*/
+    vertical-align: bottom;
+    
+
+}
+
+.btn_game:disabled{
+    color: black;
+
+}
+.btn_game:hover{
+    background-color:red;
+    transform: scale(1.1,1.1);
+}
+
+.top{
+    background-color: steelblue;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 1.5px 1.5px black;
+}
+
+.game{
+    background-color:rgba(0, 0, 0, .5);
+    height: 540px;
+    width: 480px;
+    position: absolute;
+    display: inline-block;
+    margin-left: 30%;
+   
+    
+}
+.game_font{
+    font-size: 30px;
+    
+}
+
+#turn{
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    margin: 0px;
+
+}
+.restart{
+    
+    border: 0px;
+    color: white;
+    background-color: black;
+    margin-left: 25%;
+    font-size: 30px;
+    display: none;
+}
+
+.restart:hover{
+    background-color: red;
+    transform: scale(1.1,1.1);
+
+}
+
+
