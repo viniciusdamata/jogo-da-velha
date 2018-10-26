@@ -1,22 +1,23 @@
-    body{
+  body{
         margin:0px;
         border-spacing: 0px;
-        width: 100%
+        background: radial-gradient(ellipse at center, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
     }
     .top{
         background-color: steelblue;
         color: white;
         text-align: center;
         height: 10%;
-        width: 100%;
-        }
+        
+    }
     .game{
-        width: 500px;
-        height: 500px;
-       
+        width: 400px;
+        height: 400px;
+        
         
     }
     .btn_game{
         height: 120px;
         width: 120px;
     }
+  
