@@ -38,14 +38,12 @@ function blockBoard() {
 }
 function Listener() {
     /**
-     * Adiciona um event listener em todos os botões com a função game
-     * passando como parametro o indice do for, que representa a posição
-     * do botão no array board.
+     * Adiciona em cada botão um event listener responsavel por chamar a 
+     * função principal "game"
      */
+    board = document.getElementsByClassName("btn_game");
     for (let i = 0; i < 9; i++) {
-        board[i] = document.getElementById('bt' + (i + 1));
-        document.getElementById('bt' + (i + 1)).addEventListener("click", function () { game(i) });
-
+        board[i].addEventListener("click", function () { game(i) });
     }
 }
 function mainDiagonal() {
@@ -148,6 +146,7 @@ function game(btn) {
      * e utiliza o operador mod '%' para determinar se é a vez do jogador 'x' ou 'o'.
      * Após ser clicado o botão é desativado.
      * Após a jogada ser efetuada a variavel turn é incrementada.
+     * Recebe como parametro a posição do botão
      */
 
     document.getElementById("turn").innerHTML = "Jogador:" + ((turn + 1) % 2 + 1);
