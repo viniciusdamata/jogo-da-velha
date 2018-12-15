@@ -27,7 +27,7 @@ function initBoard() {
 }
 function blockBoard() {
     /**
-     * Bloqueia o tabuleior apos determinar que o jogo acabou e mostra 
+     * Bloqueia o tabuleior apos determinar que o jogo acabou e mostra
      * o botao para reiniciar.
      */
     for (let i = 0; i < board.length; i++) {
@@ -38,8 +38,8 @@ function blockBoard() {
 }
 function Listener() {
     /**
-     * Adiciona um event listener em todos os botões com a função game 
-     * passando como parametro o indice do for, que representa a posição 
+     * Adiciona um event listener em todos os botões com a função game
+     * passando como parametro o indice do for, que representa a posição
      * do botão no array board.
      */
     for (let i = 0; i < 9; i++) {
@@ -108,11 +108,11 @@ function rules(btn) {
     /**
      * Função principal das comparações para determinar o vencedor,
      * esta função recebe como parametro o botão clicado e compara apenas as
-     * possiveis chances de vitoria chamando os metodos que comparam as linhas 
+     * possiveis chances de vitoria chamando os metodos que comparam as linhas
      * e colunas ligadas ao botão.
      */
     if(btn === 4){
-        return centerLine() || centerColumn() || mainDiagonal() || secondaryDiagonal(); 
+        return centerLine() || centerColumn() || mainDiagonal() || secondaryDiagonal();
     }
     if(btn === 0){
         return firstLine() || firstColumn() || mainDiagonal();
@@ -120,7 +120,7 @@ function rules(btn) {
     if(btn === 2){
         return firstLine() || lastColumn() || secondaryDiagonal();
     }
-    if(btn === 6){ 
+    if(btn === 6){
         return firstColumn() || lastLine() || secondaryDiagonal();
     }
     if(btn === 8){
@@ -138,18 +138,18 @@ function rules(btn) {
     if(btn === 7){
         return centerColumn() || lastLine();
     }
- 
+
     return false;
 }
 
 function game(btn) {
     /**
-     * Função responsavel por fazer as jogadas, recebe um inteiro btn 
+     * Função responsavel por fazer as jogadas, recebe um inteiro btn
      * e utiliza o operador mod '%' para determinar se é a vez do jogador 'x' ou 'o'.
      * Após ser clicado o botão é desativado.
      * Após a jogada ser efetuada a variavel turn é incrementada.
      */
-   
+
     document.getElementById("turn").innerHTML = "Jogador:" + ((turn + 1) % 2 + 1);
     if (turn % 2 === 0) {
         board[btn].innerHTML = 'x'.fontsize(30);
